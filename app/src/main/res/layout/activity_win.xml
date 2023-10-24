@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wins"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="311dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="48dp"
+        android:background="#88EC51F6"
+        android:text="Campeon de la fecha:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="330dp"
+        android:layout_height="299dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447"
+        app:srcCompat="@drawable/image_add_imgf" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="357dp"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAdd"
+        app:layout_constraintVertical_bias="0.36"
+        tools:layout_editor_absoluteX="27dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonCompartir"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_raduis"
+            app:srcCompat="@drawable/cuota" />
+
+        <TextView
+            android:id="@+id/textViewWin"
+            android:layout_width="231dp"
+            android:layout_height="match_parent"
+            android:background="#88EC51F6"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/borrar" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
